@@ -1,0 +1,3 @@
+function ProductosLista({ producto }) {
+  return;
+}
