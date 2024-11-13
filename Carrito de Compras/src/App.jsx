@@ -8,15 +8,23 @@ function App() {
   const [productoscarrito, setProductosCarrito] = useState([]);
   return (
     <>
-      <ListaProductos
-        productos={groceries}
-        productoscarrito={productoscarrito}
-        setProductosCarrito={setProductosCarrito}
-      />
-      <Carrito
-        productoscarrito={productoscarrito}
-        setProductosCarrito={setProductosCarrito}
-      />
+      <div className="container">
+        <div className="row">
+          <div className="col-6">
+            <ListaProductos
+              productos={groceries}
+              productoscarrito={productoscarrito}
+              setProductosCarrito={setProductosCarrito}
+            />
+          </div>
+          <div className="col-6">
+            <Carrito
+              productoscarrito={productoscarrito}
+              setProductosCarrito={setProductosCarrito}
+            />
+          </div>
+        </div>
+      </div>
     </>
   );
 }
