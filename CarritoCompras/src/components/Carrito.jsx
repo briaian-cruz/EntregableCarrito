@@ -1,8 +1,8 @@
-function Carrito({ productoscarrito }) {
+function Carrito({ productosCarrito }) {
   return (
     <>
       <h1>Carrito</h1>
-      {productoscarrito.map((producto) => (
+      {productosCarrito.map((producto) => (
         <p key={producto.id}>
           {producto.name} ${producto.unitPrice}
         </p>

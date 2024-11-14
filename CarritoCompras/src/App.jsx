@@ -5,7 +5,7 @@ import Carrito from "./components/Carrito";
 import "./App.css";
 
 function App() {
-  const [productoscarrito, setProductosCarrito] = useState([]);
+  const [productosCarrito, setProductosCarrito] = useState([]);
   return (
     <>
       <div className="container">
@@ -13,13 +13,13 @@ function App() {
           <div className="col-6">
             <ListaProductos
               productos={groceries}
-              productoscarrito={productoscarrito}
+              productosCarrito={productosCarrito}
               setProductosCarrito={setProductosCarrito}
             />
           </div>
           <div className="col-6">
             <Carrito
-              productoscarrito={productoscarrito}
+              productosCarrito={productosCarrito}
               setProductosCarrito={setProductosCarrito}
             />
           </div>

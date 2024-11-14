@@ -1,5 +1,5 @@
 import ProductosLista from "./ProductosLista";
-function ListaProductos({ productos, productoscarrito, setProductosCarrito }) {
+function ListaProductos({ productos, productosCarrito, setProductosCarrito }) {
   // const AñadirCarrito = (productos) => {
   //   setProductosCarrito(productos);
   // };
@@ -9,8 +9,8 @@ function ListaProductos({ productos, productoscarrito, setProductosCarrito }) {
       {productos.map((producto) => (
         <ProductosLista
           key={producto.id}
-          productoscarrito={productoscarrito}
-          setProductos={setProductosCarrito}
+          productosCarrito={productosCarrito}
+          setProductosCarrito={setProductosCarrito}
           producto={producto}
         />
       ))}

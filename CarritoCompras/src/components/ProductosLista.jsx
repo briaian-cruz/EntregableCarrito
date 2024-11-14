@@ -1,6 +1,6 @@
 function ProductosLista({ producto, setProductosCarrito, productosCarrito }) {
   function handleClick() {
-    setProductosCarrito([...productosCarrito, producto]);
+    setProductosCarrito([...productosCarrito, { producto, cantidad: 1 }]);
   }
   // ([...productosCarrito.push({ producto, cantidad: 1 })]);
 
