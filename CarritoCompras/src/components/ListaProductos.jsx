@@ -2,7 +2,7 @@ import ProductosLista from "./ProductosLista";
 function ListaProductos({ productos, productosCarrito, setProductosCarrito }) {
   return (
     <>
-      <h1>hola</h1>
+      <h1>Productos</h1>
       {productos.map((producto) => (
         <ProductosLista
           key={producto.id}
