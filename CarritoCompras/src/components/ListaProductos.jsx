@@ -1,8 +1,5 @@
 import ProductosLista from "./ProductosLista";
 function ListaProductos({ productos, productosCarrito, setProductosCarrito }) {
-  // const AñadirCarrito = (productos) => {
-  //   setProductosCarrito(productos);
-  // };
   return (
     <>
       <h1>hola</h1>

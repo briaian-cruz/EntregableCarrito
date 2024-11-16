@@ -1,6 +1,18 @@
 function ProductosLista({ producto, setProductosCarrito, productosCarrito }) {
   function handleClick() {
-    setProductosCarrito([...productosCarrito, { producto, cantidad: 1 }]);
+    const prodExiste = productosCarrito.find(
+      (prev) => prev.producto.id === producto.id
+    );
+    if (prodExiste) {
+      const actual = productosCarrito.map((prev) =>
+        prev.producto.id === producto.id
+          ? { ...prev, cantidad: prev.cantidad + 1 }
+          : prev
+      );
+      setProductosCarrito(actual);
+    } else {
+      setProductosCarrito([...productosCarrito, { producto, cantidad: 1 }]);
+    }
   }
   // ([...productosCarrito.push({ producto, cantidad: 1 })]);
 
